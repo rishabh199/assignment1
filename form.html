@@ -1,16 +1,17 @@
-<!DOC TYPE html>
+<!DOCTYPE html>
 <html>
     <head>
     <title> Urban Kart </title>
     <style>
         body {
-            background-color:aliceblue;
+            background-color: coral;
             font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
             font-style: italic;
             background-image: url('new.jpg') ;
             background-repeat: no-repeat;
             background-attachment: fixed;
             background-size: 100% 100%;
+            
             
         }
         h1 {
@@ -25,6 +26,7 @@
             background-color: snow;
             font-style: normal;
             font-family: Georgia, 'Times New Roman', Times, serif;
+            font-stretch: semi-expanded;
         }
         table {
             background-color:rgb(250, 246, 1);
@@ -53,7 +55,7 @@
                     <label for="username">Name</label>
                 </td>
                 <td>
-                    <input type="text" id="username" name="username" aria-required="true">
+                    <input type="text" id="username" name="username" style = "writing-mode: horizontal-tb" requireds>
                 </td>
             </tr>
             <br>
@@ -62,7 +64,7 @@
                     <label for = "number">Mobile Number</label>
                 </td>
                 <td>
-                    <input type = "tel" id = "tel" min="8" max="10" required>
+                    <input type = "number" id = "number" min="8" max="10" required>
                 </td>
             </tr>
             <br>
@@ -75,6 +77,7 @@
                     <input type ="email" id ="email" style = "writing-mode: horizontal-tb" name="email" required>
                 </td>
             </tr>
+            <br>
             <tr>
                 <td>
                     <label for = "name">Address</label>
