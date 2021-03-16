@@ -12,6 +12,8 @@
             img {
                 align-items: flex-start;
                 font: bold;
+                width: 400px;
+                height: 200px;
             }
             h1 {
                 background-color: tomato;
@@ -20,19 +22,48 @@
         </style>
     </head>
     <body>
+
+        <img src="01.jpg" width="100px" height="50px" >
         <h1>
             Shopping List
         </h1>
-        <table border = "1" style="width:auto">
+        <table border="3" style="width:auto">
             <tr>
                 <td>
-                    <img src="laptop.jpg" alt="Laptop">
+                    <img src="laptop.jpg" alt="Laptop" >
                 </td>
                 <td>
-                    <label for="name">Laptop</label>
+                    <label for="name"><h2>Laptop</h2></label>
                     <br>
                     <label for="name">Quantity</label>
                     <input type="number" id="number" number="10">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="photo-1480694313141-fce5e697ee25.jpg" alt="Mobile" >
+                </td>
+                <td>
+                    <label for="name"><h2>Mobile</h2></label>
+                    <br>
+                    <label for="name">Quantity</label>
+                    <input type="number" id="number" number="10">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="fridge.jpg" alt="fridge" >
+                </td>
+                <td>
+                    <label for="name"><h2>Fridge</h2></label>
+                    <br>
+                    <label for="name">Quantity</label>
+                    <input type="number" id="number" number="10">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="submit">
                 </td>
             </tr>
         </table>

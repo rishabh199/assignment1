@@ -4,9 +4,14 @@
     <title> Urban Kart </title>
     <style>
         body {
-            background-color:slateblue;
+            background-color:aliceblue;
             font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
             font-style: italic;
+            background-image: url('new.jpg') ;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: 100% 100%;
+            
         }
         h1 {
             font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -22,29 +27,33 @@
             font-family: Georgia, 'Times New Roman', Times, serif;
         }
         table {
-            background-color: chartreuse;
+            background-color:rgb(250, 246, 1);
             border: darkblue;
+            border-bottom: darkturquoise;
+            border-color: honeydew;
+
 
         }
         iframe {
             align-content: flex-end;
         }
+        
 
     </style>
     <meta charset="UTF-8">
     </head>
     <body>
-        <img src="01.jpg" >
+        <img src="Screenshot 2021-03-16 111432.jpg"  height="70px" width="1400px">
         
         <h1>Urban Kart</h1>
-        <table border = "1" text align="center" style="width:50%">
+        <table align="center" style="width: 40px;">
             
             <tr>
                 <td>
-                    <label for="name">Name</label>
+                    <label for="username">Name</label>
                 </td>
                 <td>
-                    <input type="text" id="name" name="name" style="writing-mode: horizontal-tb">
+                    <input type="text" id="username" name="username" aria-required="true">
                 </td>
             </tr>
             <br>
@@ -53,7 +62,7 @@
                     <label for = "number">Mobile Number</label>
                 </td>
                 <td>
-                    <input type = "number" id = "number" number = "10">
+                    <input type = "tel" id = "tel" min="8" max="10" required>
                 </td>
             </tr>
             <br>
@@ -63,7 +72,7 @@
                     <Label for = "email"> Email </Label>
                 </td>
                 <td>
-                    <input type ="email" id ="email" style = "writing-mode: horizontal-tb">
+                    <input type ="email" id ="email" style = "writing-mode: horizontal-tb" name="email" required>
                 </td>
             </tr>
             <tr>
@@ -71,7 +80,7 @@
                     <label for = "name">Address</label>
                 </td>
                 <td>
-                    <input type = "name" id = "name" name = "name" style = "writing-mode: horizontal-tb">
+                    <input type = "text" id = "name" name = "name" style = "writing-mode: horizontal-tb" required>
                 </td>
             </tr>
             <br>
@@ -80,6 +89,7 @@
             <td></td>
             <td>
             <button onclick="document.location='shopping-list.html'">Login</button>
+            <input type="reset">
             </td>
             </tr>
         </table>
